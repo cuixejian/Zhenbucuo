@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Emailable Report</title>
+</head>
+<body>
+<h1>${title}</h1>
+
+
+<table width="100%" border="1" cellspacing="2" cellpadding="10" style="border-collapse: collapse; display: table;">
+    <tbody>
+        <tr>
+          <th>Test Method</th>
+          <th>Status</th>
+          <th>Start Time</th>
+          <th>Duration</th>
+        </tr>
+
+              <tr>
+                <th colspan="4">Test Name: <em>TpShopTest</em> (Suite: <em>first</em>)</th>
+              </tr>
+
+                  <tr bgcolor=#FF7F7F>
+                    <td>
+                        <font color="white"><em>${name0}</em></font>
+                    </td>
+                    <td>
+                        <font color="white">${result0}</font>
+                    </td>
+                    
+                  </tr>
+                  <tr bgcolor=#8CA93E>
+                    <td>
+                        <font color="white"><em>${name1}</em></font>
+                    </td>
+                    <td>
+                        <font color="white">${result1}</font>
+                    </td>
+                  </tr>
+                  <tr bgcolor=#FF7F7F>
+                    <td>
+                        <font color="white"><em>${name2}</em></font>
+                    </td>
+                    <td>
+                        <font color="white">${result2}</font>
+                    </td>
+                  <tr bgcolor=#8CA93E>
+                    <td>
+                        <font color="white"><em>${name3}</em></font>
+                    </td>
+                    <td>
+                        <font color="white">${result3}</font>
+                    </td>
+                  </tr>
+                  <tr bgcolor=#8CA93E>
+                    <td>
+                        <font color="white"><em>${name4}</em></font>
+                    </td>
+                    <td>
+                        <font color="white">${result4}</font>
+                    </td>
+                  </tr>
+    </tbody>
+</table>
+</body>
+</html>
