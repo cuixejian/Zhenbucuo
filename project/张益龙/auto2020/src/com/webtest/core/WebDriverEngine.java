@@ -25,10 +25,7 @@ import org.testng.annotations.Test;
 
 import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
-/**
- * author:lihuanzhen
- 
- */
+
 public class WebDriverEngine {
 
 	WebDriver driver = null;

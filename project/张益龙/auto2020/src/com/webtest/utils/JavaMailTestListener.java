@@ -19,7 +19,7 @@ import org.testng.TestListenerAdapter;
 
 import com.beust.jcommander.internal.Lists;
 import com.webtest.demo.Test1;
-import com.webtest.demo.test01;
+
 
 import freemarker.template.TemplateException;
 

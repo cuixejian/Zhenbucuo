@@ -1,4 +1,4 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
 
 <suite name="s1" verbose="1" parallel="none">
 		<listeners>
@@ -8,7 +8,9 @@
 	<test name="t2" preserve-order="true">
 
 		<classes>
-			<class name="com.webtest.demo.Test02" />
+			<class name="com.webtest.demo.TpShopTest01"></class>
+			<class name="com.webtest.demo.TPshopTest02"></class>
+			<class name="com.webtest.demo.TPshopTest03"></class>
 		</classes>
 	</test>
 

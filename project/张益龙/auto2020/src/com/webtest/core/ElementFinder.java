@@ -6,10 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.webtest.utils.Log;
-/**
- * author:lihuanzhen
- * ����Ԫ����
- */
+
 public class ElementFinder {
 	
 	WebDriver driver;

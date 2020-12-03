@@ -27,7 +27,7 @@ import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 
 /**
- * author:lihuanzhen
+ * author:zhangyilong
  *
  */
 
@@ -68,12 +68,7 @@ public class BaseTest {
 	}
 
 
-	/**
-	 * 
-	 *��ʼ�������
-	 * 
-	 */
-
+	
 
 	@BeforeClass
 	public void doBeforeClass() throws Exception {

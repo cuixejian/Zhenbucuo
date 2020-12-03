@@ -23,5 +23,9 @@
 	<classpathentry kind="lib" path="lib/SaxonLiaison.jar"/>
 	<classpathentry kind="lib" path="lib/java-client-7.3.0.jar"/>
 	<classpathentry kind="lib" path="lib/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="lib/testng-7.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/freemarker-2.3.30.jar"/>
+	<classpathentry kind="lib" path="lib/javax.mail-1.6.2.jar"/>
+	<classpathentry kind="lib" path="lib/jsoup-1.13.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
