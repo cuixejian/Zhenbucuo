@@ -8,4 +8,6 @@ encoding//src/com/webtest/dataprovider/MysqlDataProvider.java=UTF-8
 encoding//src/com/webtest/dataprovider/NSDataProvider.java=UTF-8
 encoding//src/com/webtest/dataprovider/TxtDataProvider.java=UTF-8
 encoding//src/com/webtest/demo/Admin_Login.java=UTF-8
+encoding//src/com/webtest/utils/JavaMailTestListener.java=UTF-8
 encoding//src/com/webtest/utils/createDayReportFiles.java=UTF-8
+encoding/<project>=UTF-8

@@ -8,12 +8,14 @@ import org.apache.commons.compress.archivers.sevenz.CLI;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.dataprovider.ExcelDataProvider;
+import com.webtest.utils.JavaMailTestListener;
 import com.webtest.utils.ReadProperties;
-
+@Listeners(JavaMailTestListener.class)
 public class TPshopTest03 extends BaseTest{
 	@BeforeMethod
 	public void loginBehind() throws IOException, InterruptedException {

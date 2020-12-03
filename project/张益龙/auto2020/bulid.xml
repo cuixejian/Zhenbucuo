@@ -17,13 +17,15 @@
     <!-- 编译 src目录 -->
     <target name="compile"  depends ="clean">
         <mkdir dir ="${dest}"/>
-    	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on" encoding="UTF-8"/>
-       
+    	  <javac srcdir="src" destdir="${dest}"  classpathref="classes" includeantruntime="on" encoding="utf-8"  />
+       		
     </target>
     <!-- 运行 -->
-    <target name="run"  depends ="compile">
+    <target name="run"  depends ="compile" >
      	   	<testng outputdir="${testng.report.dir}" classpathref="classes" >
+     	   	   <jvmarg value="-Dfile.encoding=UTF-8" />
     	  	 <xmlfileset dir="." includes="testng.xml"/>
+     	   		
     	  	</testng>
     </target>
 </project>

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="s1" duration-ms="43" started-at="2020-12-03T08:17:16 CST" finished-at="2020-12-03T08:17:16 CST">
+  <suite name="s1" duration-ms="46" started-at="2020-12-03T11:07:49 CST" finished-at="2020-12-03T11:07:49 CST">
     <groups>
     </groups>
-    <test name="t2" duration-ms="43" started-at="2020-12-03T08:17:16 CST" finished-at="2020-12-03T08:17:16 CST">
+    <test name="t2" duration-ms="46" started-at="2020-12-03T11:07:49 CST" finished-at="2020-12-03T11:07:49 CST">
       <class name="com.webtest.demo.Test02">
-        <test-method status="PASS" signature="test01()[pri:0, instance:com.webtest.demo.Test02@e720b71]" name="test01" duration-ms="8" started-at="2020-12-03T08:17:16 CST" finished-at="2020-12-03T08:17:16 CST">
+        <test-method status="PASS" signature="test01()[pri:0, instance:com.webtest.demo.Test02@37374a5e]" name="test01" duration-ms="8" started-at="2020-12-03T11:07:49 CST" finished-at="2020-12-03T11:07:49 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test01 -->
-        <test-method status="FAIL" signature="test02()[pri:0, instance:com.webtest.demo.Test02@e720b71]" name="test02" duration-ms="1" started-at="2020-12-03T08:17:16 CST" finished-at="2020-12-03T08:17:16 CST">
+        <test-method status="FAIL" signature="test02()[pri:0, instance:com.webtest.demo.Test02@37374a5e]" name="test02" duration-ms="1" started-at="2020-12-03T11:07:49 CST" finished-at="2020-12-03T11:07:49 CST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [1]]]>
@@ -58,7 +58,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test02 -->
-        <test-method status="PASS" signature="test03()[pri:0, instance:com.webtest.demo.Test02@e720b71]" name="test03" duration-ms="1" started-at="2020-12-03T08:17:16 CST" finished-at="2020-12-03T08:17:16 CST">
+        <test-method status="PASS" signature="test03()[pri:0, instance:com.webtest.demo.Test02@37374a5e]" name="test03" duration-ms="1" started-at="2020-12-03T11:07:49 CST" finished-at="2020-12-03T11:07:49 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test03 -->

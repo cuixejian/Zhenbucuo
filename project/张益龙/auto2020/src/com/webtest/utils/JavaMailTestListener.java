@@ -42,6 +42,7 @@ public class JavaMailTestListener extends TestListenerAdapter {
 			System.out.println("成功的测试用例："+len1);
 			System.out.println("失败的测试用例："+len2);
 			String result="本次运行了"+len+"个测试用例,成功了"+len1+"个失败了"+len2+"个";
+			System.out.println(result);
 			for(int j=0;j<failedList.size();j++)
 			{
 				ITestResult tr=(ITestResult) failedList.get(j);
@@ -111,12 +112,15 @@ public class JavaMailTestListener extends TestListenerAdapter {
 				content = bReader.readLine();
 				html=html+content;
 			}
+			System.out.println(html);
 			
 			MailUtil.mail(html);
 		} catch (IOException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		} catch (MessagingException e) {
+		} 
+
+ catch (MessagingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

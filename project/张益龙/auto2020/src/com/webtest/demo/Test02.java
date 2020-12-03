@@ -19,6 +19,7 @@ import com.webtest.utils.JavaMailTestListener;
 public class Test02{
 	@Test
 	public void test01() {
+		System.out.println("这是一个测试******************HELLO11111111111111111111111************");
 
 		Assert.assertEquals(2, 2);
 	}
