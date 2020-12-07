@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [s1]">
+  <listeners>
+    <listener class-name="com.webtest.core.WebTestListener"/>
+  </listeners>
+  <test thread-count="5" name="t2(failed)">
+    <classes>
+      <class name="demo1.LoginTest">
+        <methods>
+          <include name="addListener"/>
+          <include name="doAfterMethod"/>
+          <include name="testLogin1"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- demo1.LoginTest -->
+    </classes>
+  </test> <!-- t2(failed) -->
+</suite> <!-- Failed suite [s1] -->

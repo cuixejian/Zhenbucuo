@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="50" passed="48">
+  <reporter-output>
+  </reporter-output>
+  <suite name="s1" duration-ms="663235" started-at="2020-12-07T08:42:26 CST" finished-at="2020-12-07T08:53:30 CST">
+    <groups>
+    </groups>
+    <test name="t2" duration-ms="663235" started-at="2020-12-07T08:42:26 CST" finished-at="2020-12-07T08:53:30 CST">
+      <class name="com.webtest.demo.CxjTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.webtest.demo.CxjTest@a67c67e]" name="addListener" is-config="true" duration-ms="10" started-at="2020-12-07T08:42:26 CST" finished-at="2020-12-07T08:42:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@36478bce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.CxjTest@a67c67e]" name="doBeforeClass" is-config="true" duration-ms="7757" started-at="2020-12-07T08:42:26 CST" finished-at="2020-12-07T08:42:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:com.webtest.demo.CxjTest@a67c67e]" name="test1" duration-ms="47239" started-at="2020-12-07T08:42:35 CST" data-provider="front_login" finished-at="2020-12-07T08:43:22 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:2, instance:com.webtest.demo.CxjTest@a67c67e]" name="test2" duration-ms="35030" started-at="2020-12-07T08:43:22 CST" finished-at="2020-12-07T08:43:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:3, instance:com.webtest.demo.CxjTest@a67c67e]" name="test3" duration-ms="28477" started-at="2020-12-07T08:43:57 CST" finished-at="2020-12-07T08:44:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:4, instance:com.webtest.demo.CxjTest@a67c67e]" name="test4" duration-ms="28734" started-at="2020-12-07T08:44:25 CST" finished-at="2020-12-07T08:44:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:5, instance:com.webtest.demo.CxjTest@a67c67e]" name="test5" duration-ms="9643" started-at="2020-12-07T08:44:54 CST" finished-at="2020-12-07T08:45:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test6()[pri:6, instance:com.webtest.demo.CxjTest@a67c67e]" name="test6" duration-ms="12786" started-at="2020-12-07T08:45:04 CST" finished-at="2020-12-07T08:45:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test7()[pri:7, instance:com.webtest.demo.CxjTest@a67c67e]" name="test7" duration-ms="9585" started-at="2020-12-07T08:45:16 CST" finished-at="2020-12-07T08:45:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test8()[pri:8, instance:com.webtest.demo.CxjTest@a67c67e]" name="test8" duration-ms="31405" started-at="2020-12-07T08:45:26 CST" finished-at="2020-12-07T08:45:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="test9()[pri:9, instance:com.webtest.demo.CxjTest@a67c67e]" name="test9" duration-ms="9508" started-at="2020-12-07T08:45:57 CST" finished-at="2020-12-07T08:46:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="test10()[pri:10, instance:com.webtest.demo.CxjTest@a67c67e]" name="test10" duration-ms="19287" started-at="2020-12-07T08:46:07 CST" finished-at="2020-12-07T08:46:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="test11()[pri:11, instance:com.webtest.demo.CxjTest@a67c67e]" name="test11" duration-ms="9612" started-at="2020-12-07T08:46:26 CST" finished-at="2020-12-07T08:46:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="test12()[pri:12, instance:com.webtest.demo.CxjTest@a67c67e]" name="test12" duration-ms="6254" started-at="2020-12-07T08:46:36 CST" finished-at="2020-12-07T08:46:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="test13()[pri:13, instance:com.webtest.demo.CxjTest@a67c67e]" name="test13" duration-ms="6248" started-at="2020-12-07T08:46:42 CST" finished-at="2020-12-07T08:46:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="test14()[pri:14, instance:com.webtest.demo.CxjTest@a67c67e]" name="test14" duration-ms="6272" started-at="2020-12-07T08:46:48 CST" finished-at="2020-12-07T08:46:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="test15()[pri:15, instance:com.webtest.demo.CxjTest@a67c67e]" name="test15" duration-ms="6317" started-at="2020-12-07T08:46:55 CST" finished-at="2020-12-07T08:47:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="test16()[pri:16, instance:com.webtest.demo.CxjTest@a67c67e]" name="test16" duration-ms="6270" started-at="2020-12-07T08:47:01 CST" finished-at="2020-12-07T08:47:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="test17()[pri:17, instance:com.webtest.demo.CxjTest@a67c67e]" name="test17" duration-ms="6283" started-at="2020-12-07T08:47:07 CST" finished-at="2020-12-07T08:47:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17 -->
+        <test-method status="PASS" signature="test18()[pri:18, instance:com.webtest.demo.CxjTest@a67c67e]" name="test18" duration-ms="28647" started-at="2020-12-07T08:47:14 CST" finished-at="2020-12-07T08:47:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test18 -->
+        <test-method status="PASS" signature="test19()[pri:19, instance:com.webtest.demo.CxjTest@a67c67e]" name="test19" duration-ms="6561" started-at="2020-12-07T08:47:42 CST" finished-at="2020-12-07T08:47:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test19 -->
+        <test-method status="PASS" signature="test20()[pri:20, instance:com.webtest.demo.CxjTest@a67c67e]" name="test20" duration-ms="6537" started-at="2020-12-07T08:47:49 CST" finished-at="2020-12-07T08:47:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test20 -->
+        <test-method status="PASS" signature="test21()[pri:21, instance:com.webtest.demo.CxjTest@a67c67e]" name="test21" duration-ms="12801" started-at="2020-12-07T08:47:55 CST" finished-at="2020-12-07T08:48:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test21 -->
+        <test-method status="PASS" signature="test22()[pri:22, instance:com.webtest.demo.CxjTest@a67c67e]" name="test22" duration-ms="9520" started-at="2020-12-07T08:48:08 CST" finished-at="2020-12-07T08:48:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test22 -->
+        <test-method status="PASS" signature="test23()[pri:23, instance:com.webtest.demo.CxjTest@a67c67e]" name="test23" duration-ms="6268" started-at="2020-12-07T08:48:18 CST" finished-at="2020-12-07T08:48:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test23 -->
+        <test-method status="PASS" signature="test24()[pri:24, instance:com.webtest.demo.CxjTest@a67c67e]" name="test24" duration-ms="3235" started-at="2020-12-07T08:48:24 CST" finished-at="2020-12-07T08:48:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test24 -->
+        <test-method status="PASS" signature="test25()[pri:25, instance:com.webtest.demo.CxjTest@a67c67e]" name="test25" duration-ms="12862" started-at="2020-12-07T08:48:27 CST" finished-at="2020-12-07T08:48:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test25 -->
+        <test-method status="PASS" signature="test26()[pri:26, instance:com.webtest.demo.CxjTest@a67c67e]" name="test26" duration-ms="47705" started-at="2020-12-07T08:48:40 CST" finished-at="2020-12-07T08:49:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test26 -->
+        <test-method status="PASS" signature="test27()[pri:27, instance:com.webtest.demo.CxjTest@a67c67e]" name="test27" duration-ms="41352" started-at="2020-12-07T08:49:28 CST" finished-at="2020-12-07T08:50:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test27 -->
+        <test-method status="PASS" signature="test28()[pri:28, instance:com.webtest.demo.CxjTest@a67c67e]" name="test28" duration-ms="7480" started-at="2020-12-07T08:50:09 CST" finished-at="2020-12-07T08:50:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test28 -->
+        <test-method status="PASS" signature="test29()[pri:29, instance:com.webtest.demo.CxjTest@a67c67e]" name="test29" duration-ms="21190" started-at="2020-12-07T08:50:17 CST" finished-at="2020-12-07T08:50:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test29 -->
+        <test-method status="PASS" signature="test30()[pri:30, instance:com.webtest.demo.CxjTest@a67c67e]" name="test30" duration-ms="5256" started-at="2020-12-07T08:50:38 CST" finished-at="2020-12-07T08:50:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test30 -->
+        <test-method status="FAIL" signature="test31()[pri:31, instance:com.webtest.demo.CxjTest@a67c67e]" name="test31" duration-ms="28" started-at="2020-12-07T08:50:43 CST" finished-at="2020-12-07T08:50:43 CST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a class="layui-layer-ico layui-layer-max" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '10.7.86.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9964, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adea4afb-1e31-4e93-8e45-e7247d95f59f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="layui-layer-ico layui-layer-max" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '10.7.86.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9964, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adea4afb-1e31-4e93-8e45-e7247d95f59f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(Unknown Source)
+at com.webtest.demo.CxjTest.test31(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test31 -->
+        <test-method status="PASS" signature="test32()[pri:32, instance:com.webtest.demo.CxjTest@a67c67e]" name="test32" duration-ms="2027" started-at="2020-12-07T08:50:43 CST" finished-at="2020-12-07T08:50:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test32 -->
+        <test-method status="FAIL" signature="test33()[pri:33, instance:com.webtest.demo.CxjTest@a67c67e]" name="test33" duration-ms="16" started-at="2020-12-07T08:50:45 CST" finished-at="2020-12-07T08:50:45 CST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '10.7.86.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9964, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adea4afb-1e31-4e93-8e45-e7247d95f59f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '10.7.86.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 9964, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: adea4afb-1e31-4e93-8e45-e7247d95f59f
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(Unknown Source)
+at com.webtest.demo.CxjTest.test33(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test33 -->
+        <test-method status="PASS" signature="test34()[pri:34, instance:com.webtest.demo.CxjTest@a67c67e]" name="test34" duration-ms="12953" started-at="2020-12-07T08:50:45 CST" finished-at="2020-12-07T08:50:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test34 -->
+        <test-method status="PASS" signature="test35()[pri:35, instance:com.webtest.demo.CxjTest@a67c67e]" name="test35" duration-ms="13489" started-at="2020-12-07T08:50:58 CST" finished-at="2020-12-07T08:51:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test35 -->
+        <test-method status="PASS" signature="test36()[pri:36, instance:com.webtest.demo.CxjTest@a67c67e]" name="test36" duration-ms="6520" started-at="2020-12-07T08:51:11 CST" finished-at="2020-12-07T08:51:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test36 -->
+        <test-method status="PASS" signature="test37()[pri:37, instance:com.webtest.demo.CxjTest@a67c67e]" name="test37" duration-ms="9614" started-at="2020-12-07T08:51:18 CST" finished-at="2020-12-07T08:51:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test37 -->
+        <test-method status="PASS" signature="test38()[pri:38, instance:com.webtest.demo.CxjTest@a67c67e]" name="test38" duration-ms="6607" started-at="2020-12-07T08:51:28 CST" finished-at="2020-12-07T08:51:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test38 -->
+        <test-method status="PASS" signature="test39()[pri:39, instance:com.webtest.demo.CxjTest@a67c67e]" name="test39" duration-ms="18899" started-at="2020-12-07T08:51:34 CST" finished-at="2020-12-07T08:51:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test39 -->
+        <test-method status="PASS" signature="test40()[pri:40, instance:com.webtest.demo.CxjTest@a67c67e]" name="test40" duration-ms="9594" started-at="2020-12-07T08:51:53 CST" finished-at="2020-12-07T08:52:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test40 -->
+        <test-method status="PASS" signature="test41()[pri:41, instance:com.webtest.demo.CxjTest@a67c67e]" name="test41" duration-ms="6548" started-at="2020-12-07T08:52:03 CST" finished-at="2020-12-07T08:52:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test41 -->
+        <test-method status="PASS" signature="test42()[pri:42, instance:com.webtest.demo.CxjTest@a67c67e]" name="test42" duration-ms="6282" started-at="2020-12-07T08:52:09 CST" finished-at="2020-12-07T08:52:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test42 -->
+        <test-method status="PASS" signature="test43()[pri:43, instance:com.webtest.demo.CxjTest@a67c67e]" name="test43" duration-ms="14494" started-at="2020-12-07T08:52:16 CST" finished-at="2020-12-07T08:52:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test43 -->
+        <test-method status="PASS" signature="test44()[pri:44, instance:com.webtest.demo.CxjTest@a67c67e]" name="test44" duration-ms="14675" started-at="2020-12-07T08:52:30 CST" finished-at="2020-12-07T08:52:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test44 -->
+        <test-method status="PASS" signature="test45()[pri:45, instance:com.webtest.demo.CxjTest@a67c67e]" name="test45" duration-ms="11410" started-at="2020-12-07T08:52:45 CST" finished-at="2020-12-07T08:52:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test45 -->
+        <test-method status="PASS" signature="test46()[pri:46, instance:com.webtest.demo.CxjTest@a67c67e]" name="test46" duration-ms="16075" started-at="2020-12-07T08:52:56 CST" finished-at="2020-12-07T08:53:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test46 -->
+        <test-method status="PASS" signature="test47()[pri:47, instance:com.webtest.demo.CxjTest@a67c67e]" name="test47" duration-ms="3161" started-at="2020-12-07T08:53:12 CST" finished-at="2020-12-07T08:53:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test47 -->
+        <test-method status="PASS" signature="test48()[pri:48, instance:com.webtest.demo.CxjTest@a67c67e]" name="test48" duration-ms="4121" started-at="2020-12-07T08:53:15 CST" finished-at="2020-12-07T08:53:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test48 -->
+        <test-method status="PASS" signature="test49()[pri:49, instance:com.webtest.demo.CxjTest@a67c67e]" name="test49" duration-ms="6230" started-at="2020-12-07T08:53:19 CST" finished-at="2020-12-07T08:53:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test49 -->
+        <test-method status="PASS" signature="test50()[pri:50, instance:com.webtest.demo.CxjTest@a67c67e]" name="test50" duration-ms="3225" started-at="2020-12-07T08:53:26 CST" finished-at="2020-12-07T08:53:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test50 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.CxjTest@a67c67e]" name="doAfterMethod" is-config="true" duration-ms="676" started-at="2020-12-07T08:53:29 CST" finished-at="2020-12-07T08:53:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="testdemo()[pri:0, instance:com.webtest.demo.CxjTest@a67c67e]" name="testdemo" is-config="true" duration-ms="2429" started-at="2020-12-07T08:53:30 CST" finished-at="2020-12-07T08:53:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testdemo -->
+      </class> <!-- com.webtest.demo.CxjTest -->
+    </test> <!-- t2 -->
+  </suite> <!-- s1 -->
+</testng-results>

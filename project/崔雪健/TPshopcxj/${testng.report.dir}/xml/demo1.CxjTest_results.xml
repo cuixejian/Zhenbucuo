@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="t2"
+           tests="50"
+           failures="14"
+           errors="0"
+           skipped="0"
+           time="493.918">
+  <properties />
+            <testcase name="test27" time="3.038" classname="demo1.CxjTest">
+                <failure type="java.lang.NullPointerException"
+                  message="null value in entry: id=null"
+              >
+<![CDATA[java.lang.NullPointerException: null value in entry: id=null
+  com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+  com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+  com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+  com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+  org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:892)
+  com.webtest.core.WebDriverEngine.enterFrame1(Unknown Source)
+  demo1.CxjTest.test27(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test4" time="9.225" classname="demo1.CxjTest">
+                <failure type="java.lang.AssertionError"
+                  message="expected [true] but found [false]"
+              >
+<![CDATA[java.lang.AssertionError: expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:97)
+  org.testng.Assert.failNotEquals(Assert.java:969)
+  org.testng.Assert.assertTrue(Assert.java:43)
+  org.testng.Assert.assertTrue(Assert.java:53)
+  demo1.CxjTest.test4(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test43" time="3.028" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;h4&gt; is not clickable at point (91,80) because another element &lt;div id=&quot;layui-layer-shade1&quot; class=&quot;layui-layer-shade&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <h4> is not clickable at point (91,80) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test43(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test37" time="0.029" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;a class=&quot;btn blue&quot; href=&quot;/index.php/admin/Promotion/prom_order_info/id/18&quot;&gt; is not clickable at point (943,351) because another element &lt;div id=&quot;layui-layer-shade1&quot; class=&quot;layui-layer-shade&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="btn blue" href="/index.php/admin/Promotion/prom_order_info/id/18"> is not clickable at point (943,351) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test37(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test39" time="3.036" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.NoSuchFrameException"
+                  message="No frame element found by name or id workspace
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: driver.version: unknown"
+              >
+<![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id workspace
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: driver.version: unknown
+  org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+  com.webtest.core.WebDriverEngine.enterFrame(Unknown Source)
+  demo1.CxjTest.test39(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test41" time="0.068" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;a class=&quot;btn red&quot;&gt; is not clickable at point (995,351) because another element &lt;div id=&quot;layui-layer-shade1&quot; class=&quot;layui-layer-shade&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="btn red"> is not clickable at point (995,351) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test41(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test33" time="0.016" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementNotInteractableException"
+                  message="Element &lt;a class=&quot;layui-layer-ico layui-layer-close layui-layer-close1&quot; href=&quot;javascript:;&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="layui-layer-ico layui-layer-close layui-layer-close1" href="javascript:;"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test33(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test40" time="0.031" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;a class=&quot;btn red&quot;&gt; is not clickable at point (995,351) because another element &lt;div id=&quot;layui-layer-shade1&quot; class=&quot;layui-layer-shade&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="btn red"> is not clickable at point (995,351) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test40(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test38" time="0.014" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;div class=&quot;add&quot;&gt; is not clickable at point (234,264) because another element &lt;div id=&quot;layui-layer-shade1&quot; class=&quot;layui-layer-shade&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <div class="add"> is not clickable at point (234,264) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test38(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test20" time="0.020" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="TypeError: can&apos;t access dead object
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: TypeError: can't access dead object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+  com.webtest.core.WebDriverEngine.runJs(Unknown Source)
+  demo1.CxjTest.test20(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test42" time="0.074" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementClickInterceptedException"
+                  message="Element &lt;a class=&quot;btn red&quot;&gt; is not clickable at point (995,351) because another element &lt;div id=&quot;layui-layer-shade1&quot; class=&quot;layui-layer-shade&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <a class="btn red"> is not clickable at point (995,351) because another element <div id="layui-layer-shade1" class="layui-layer-shade"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test42(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test18" time="20.625" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="TypeError: can&apos;t access dead object
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: TypeError: can't access dead object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+  com.webtest.core.WebDriverEngine.runJs(Unknown Source)
+  demo1.CxjTest.test18(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test26" time="20.724" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.ElementNotInteractableException"
+                  message="Element &lt;li class=&quot;btn sure checked&quot;&gt; could not be scrolled into view
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <li class="btn sure checked"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+  com.webtest.core.WebDriverEngine.click(Unknown Source)
+  demo1.CxjTest.test26(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="test19" time="0.020" classname="demo1.CxjTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="TypeError: can&apos;t access dead object
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;CJ&apos;, ip: &apos;192.168.137.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: TypeError: can't access dead object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'CJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 73.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200217142647, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 15832, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3bd8513e-c8c1-4b85-a9f8-83c61e618c00
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+  org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:438)
+  com.webtest.core.WebDriverEngine.isTextPresent(Unknown Source)
+  demo1.CxjTest.test19(Unknown Source)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:498)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.util.ArrayList.forEach(ArrayList.java:1257)
+  org.testng.TestRunner.privateRun(TestRunner.java:766)
+  org.testng.TestRunner.run(TestRunner.java:587)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+  org.testng.SuiteRunner.run(SuiteRunner.java:286)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+  org.testng.TestNG.runSuites(TestNG.java:1039)
+  org.testng.TestNG.run(TestNG.java:1007)
+  org.testng.TestNG.privateMain(TestNG.java:1336)
+  org.testng.TestNG.main(TestNG.java:1304)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="test25" time="14.439" classname="demo1.CxjTest" />
+                <testcase name="test36" time="3.769" classname="demo1.CxjTest" />
+                <testcase name="test2" time="36.813" classname="demo1.CxjTest" />
+                <testcase name="test6" time="13.876" classname="demo1.CxjTest" />
+                <testcase name="test14" time="6.347" classname="demo1.CxjTest" />
+                <testcase name="test50" time="3.728" classname="demo1.CxjTest" />
+                <testcase name="test17" time="6.280" classname="demo1.CxjTest" />
+                <testcase name="test5" time="6.963" classname="demo1.CxjTest" />
+                <testcase name="test16" time="6.296" classname="demo1.CxjTest" />
+                <testcase name="test8" time="30.296" classname="demo1.CxjTest" />
+                <testcase name="test9" time="10.540" classname="demo1.CxjTest" />
+                <testcase name="test28" time="0.027" classname="demo1.CxjTest" />
+                <testcase name="test49" time="6.345" classname="demo1.CxjTest" />
+                <testcase name="test45" time="11.938" classname="demo1.CxjTest" />
+                <testcase name="test24" time="3.744" classname="demo1.CxjTest" />
+                <testcase name="test15" time="6.298" classname="demo1.CxjTest" />
+                <testcase name="test22" time="10.246" classname="demo1.CxjTest" />
+                <testcase name="test13" time="6.806" classname="demo1.CxjTest" />
+                <testcase name="test32" time="5.757" classname="demo1.CxjTest" />
+                <testcase name="test23" time="6.750" classname="demo1.CxjTest" />
+                <testcase name="test46" time="18.066" classname="demo1.CxjTest" />
+                <testcase name="test21" time="10.702" classname="demo1.CxjTest" />
+                <testcase name="test30" time="5.738" classname="demo1.CxjTest" />
+                <testcase name="test35" time="14.538" classname="demo1.CxjTest" />
+                <testcase name="test48" time="4.145" classname="demo1.CxjTest" />
+                <testcase name="test7" time="10.090" classname="demo1.CxjTest" />
+                <testcase name="test29" time="22.654" classname="demo1.CxjTest" />
+                <testcase name="test44" time="15.642" classname="demo1.CxjTest" />
+                <testcase name="test34" time="13.908" classname="demo1.CxjTest" />
+                <testcase name="test12" time="6.789" classname="demo1.CxjTest" />
+                <testcase name="test11" time="10.695" classname="demo1.CxjTest" />
+                <testcase name="test3" time="27.385" classname="demo1.CxjTest" />
+                <testcase name="test1" time="45.465" classname="demo1.CxjTest" />
+                <testcase name="test31" time="5.765" classname="demo1.CxjTest" />
+                <testcase name="test10" time="21.948" classname="demo1.CxjTest" />
+                <testcase name="test47" time="3.182" classname="demo1.CxjTest" />
+      
+</testsuite>
