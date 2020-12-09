@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58245" started-at="2020-12-07T08:14:01 CST" finished-at="2020-12-07T08:14:59 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58245" started-at="2020-12-07T08:14:01 CST" finished-at="2020-12-07T08:14:59 CST">
+      <class name="www.test.BackLogin">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:www.test.BackLogin@1efed156]" name="doBeforeClass" is-config="true" duration-ms="6904" started-at="2020-12-07T08:14:01 CST" finished-at="2020-12-07T08:14:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="Backadvertisement37()[pri:37, instance:www.test.BackLogin@1efed156]" name="Backadvertisement37" duration-ms="50177" started-at="2020-12-07T08:14:07 CST" finished-at="2020-12-07T08:14:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Backadvertisement37 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:www.test.BackLogin@1efed156]" name="doAfterMethod" is-config="true" duration-ms="1116" started-at="2020-12-07T08:14:58 CST" finished-at="2020-12-07T08:14:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- www.test.BackLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

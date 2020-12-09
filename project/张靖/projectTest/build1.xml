@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="AntTest" default="run" basedir="." >
+<!-- 默认target是run,运行ant命令直接执行run -->
+    <echo message="The base dir is: ${basedir}" />
+    <target name="clean">
+       <delete dir="build"/>
+    </target>
+    <target name="compile" depends="clean">
+    <!-- 编译java文件依赖clean -->
+       <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes"/>
+    </target>
+    <target name="run" depends="compile">
+    <!-- 运行class文件,依赖compile -->
+     <echo message="Compile dir is:  ${basedir}\build\classes" />
+      <java classname="Test">            
+      <classpath>               
+      <pathelement path="build/classes"/>            
+      </classpath>        
+      </java>
+    </target>
+</project>
