@@ -60,13 +60,13 @@ public class WebDriverEngine {
 
 
 
-	public void enterFrame(String frameID) {//¸ù¾İframeID½øÈëframe
+	public void enterFrame(String frameID) {//æ ¹æ®frameIDè¿›å…¥frame
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
 		Log.info("Entered iframe " + frameID);
 	}
 	
-	public void enterFrame1(String locator) {//¸ù¾İframeÎ»ÖÃ½øÈëframe
+	public void enterFrame1(String locator) {//æ ¹æ®frameä½ç½®è¿›å…¥frame
 		WebElement element = finder.findElement(locator);
 		this.pause(3000);
 		driver.switchTo().frame(element);
@@ -74,7 +74,7 @@ public class WebDriverEngine {
 	}
 
 
-	public void leaveFrame() {//·µ»Øµ½ÉÏÒ»²ã±íµ¥
+	public void leaveFrame() {//è¿”å›åˆ°ä¸Šä¸€å±‚è¡¨å•
 		driver.switchTo().defaultContent();
 		Log.info("Left the iframe");
 	}
@@ -91,11 +91,11 @@ public class WebDriverEngine {
 		Log.info("Opened url " + url);
 	}
 
-	public String getTitle() {//»ñÈ¡µ±Ç°±êÇ©Ò³µÄ±êÌâ
+	public String getTitle() {//è·å–å½“å‰æ ‡ç­¾é¡µçš„æ ‡é¢˜
 		return driver.getTitle();
 	}
 
-	private void pause(int time) {//ÔİÍ£½Å±¾Ö´ĞĞ
+	private void pause(int time) {//æš‚åœè„šæœ¬æ‰§è¡Œ
 		if (time <= 0) {
 			return;
 		}
@@ -106,7 +106,7 @@ public class WebDriverEngine {
 		}
 	}
 
-	public boolean isTextPresent(String pattern) {//ÑéÖ¤Ò³ÃæÉÏÃæÊÇ·ñ´æÔÚÄãÊäÈëµÄÎÄ±¾ÄÚÈİ
+	public boolean isTextPresent(String pattern) {//éªŒè¯é¡µé¢ä¸Šé¢æ˜¯å¦å­˜åœ¨ä½ è¾“å…¥çš„æ–‡æœ¬å†…
 
 		String text = driver.getPageSource();
 		text = text.trim();
@@ -115,11 +115,11 @@ public class WebDriverEngine {
 		}
 		return false;
 	}
-	public void enter() {//¼üÅÌÊäÈëenter
+	public void enter() {//é”®ç›˜è¾“å…¥enter
 		action.sendKeys(Keys.ENTER);
 	}
 
-	public void typeAndClear(String locator, String value) {//ÇåÀíÊäÈë
+	public void typeAndClear(String locator, String value) {//æ¸…ç†è¾“å…¥
 		WebElement element = finder.findElement(locator);
 		if (element != null) {
 			element.clear();
@@ -128,14 +128,14 @@ public class WebDriverEngine {
 		}
 	}
 
-	public void type(String locator, String value) {//ÊäÈë
+	public void type(String locator, String value) {//è¾“å…¥
 		WebElement element = finder.findElement(locator);
 		if (element != null) {
 			element.sendKeys(value);
 		}
 	}
 
-	public boolean isChecked(String locator) {//ÅĞ¶ÏÔªËØÊÇ·ñÑ¡ÖĞ
+	public boolean isChecked(String locator) {//åˆ¤æ–­å…ƒç´ æ˜¯å¦é€‰ä¸­
 		WebElement element = finder.findElement(locator);
 		return element.isSelected();
 	}
@@ -149,7 +149,7 @@ public class WebDriverEngine {
 		}
 	}
 
-	public void clickLonger(String locator) {//Í¨¹ı»¬¶¯ÊµÏÖ³¤°´
+	public void clickLonger(String locator) {//é€šè¿‡æ»‘åŠ¨å®ç°é•¿æŒ‰
 
 		WebElement element = finder.findElement(locator);
 		if (element != null) {
@@ -159,13 +159,13 @@ public class WebDriverEngine {
 		}
 	}
 
-	public void doubleClick(String locator) throws InterruptedException {//¶Ô°´Å¥½øĞĞË«»÷
+	public void doubleClick(String locator) throws InterruptedException {//å¯¹æŒ‰é’®è¿›è¡ŒåŒå‡»
 		WebElement element = finder.findElement(locator);
 	
 		action.doubleClick(element).build().perform();
 	}
 
-	public boolean isDisplayed(String locator) {//ÅĞ¶ÏÄ³¸öÔªËØÊÇ·ñ´æÔÚÒ³ÃæÉÏ
+	public boolean isDisplayed(String locator) {//åˆ¤æ–­æŸä¸ªå…ƒç´ æ˜¯å¦å­˜åœ¨é¡µé¢ä¸Š
 
 		WebElement element = finder.findElement(locator);
 		if (element != null) {
@@ -174,12 +174,12 @@ public class WebDriverEngine {
 		return false;
 	}
 
-	public String getText(String locator) {//»ñÈ¡µ±Ç°driver¶ÔÏóµÄtextÖµ
+	public String getText(String locator) {//è·å–å½“å‰driverå¯¹è±¡çš„textå€¼Öµ
 
 		return finder.findElement(locator).getText().trim();
 	}
 
-	public boolean isElementPresent(String locator) {//ÅĞ¶ÏÔªËØÊÇ·ñ´æÔÚ
+	public boolean isElementPresent(String locator) {//åˆ¤æ–­å…ƒç´ æ˜¯å¦å­˜åœ¨
 
 		WebElement element = null;
 		try {
@@ -196,79 +196,79 @@ public class WebDriverEngine {
 		}
 	}
 
-	public String getValue(String locator) {//»ñÈ¡valueÊôĞÔÖµ
+	public String getValue(String locator) {//è·å–valueå±æ€§å€¼Öµ
 
 		return finder.findElement(locator).getAttribute("value");
 	}
 
-	public String getUrl() {//»ñÈ¡µ±Ç°ÍøÒ³µØÖ·
+	public String getUrl() {//è·å–å½“å‰ç½‘é¡µåœ°å€
 		return driver.getCurrentUrl();
 	}
 
-	public void goBack() {//ºóÍË
+	public void goBack() {//åé€€
 		driver.navigate().back();
 	}
 
-	public void goForward() {//Ç°½ø
+	public void goForward() {//å‰è¿›
 
 		driver.navigate().forward();
 	}
 
-	public Alert getAlert() {//¶¨Î»µ¯³ö¶Ô»°¿òÇĞ»»µ½alertµ¯³ö¿òÉÏ
+	public Alert getAlert() {//å®šä½å¼¹å‡ºå¯¹è¯æ¡†åˆ‡æ¢åˆ°alertå¼¹å‡ºæ¡†ä¸Š
 		Alert alert = driver.switchTo().alert();
 		return alert;
 	}
 	
-	public String getAlertTest() {//»ñÈ¡alert¶Ô»°¿òÄÚÈİ
+	public String getAlertTest() {//è·å–alertå¯¹è¯æ¡†å†…å®¹
 
 		return getAlert().getText();
 	}
 
-	public void alertAccept() {//alertÈ·¶¨
+	public void alertAccept() {//alertç¡®å®š
 
 		getAlert().accept();
 		}
 
-	public Select getSelect(String locator) {//Ñ¡ÔñÏÂÀ­¿òÖĞµÄÔªËØ
+	public Select getSelect(String locator) {//é€‰æ‹©ä¸‹æ‹‰æ¡†ä¸­çš„å…ƒç´ 
 		Select inputSelect = new Select(finder.findElement(locator));
 		return inputSelect;
 	}
 
-	public void selectByValue(String locator, String value) {//ÏÂÀ­¿òÍ¨¹ıÆ¥Åäµ½±êÇ©ÀïµÄvalue
+	public void selectByValue(String locator, String value) {//ä¸‹æ‹‰æ¡†é€šè¿‡åŒ¹é…åˆ°æ ‡ç­¾é‡Œçš„value
 		getSelect(locator).selectByValue(value);
 		this.pause(5000);
 	}
 
-	public void selectByVisibleText(String locator, String value) {//ÏÂÀ­¿òÍ¨¹ıÆ¥Åäµ½µÄ¿É¼û×Ö·û
+	public void selectByVisibleText(String locator, String value) {//ä¸‹æ‹‰æ¡†é€šè¿‡åŒ¹é…åˆ°çš„å¯è§å­—ç¬¦
 		getSelect(locator).selectByVisibleText(value);
 	}
 
-	public void selectByIndex(String locator, int index) {//ÏÂÀ­¿òÍ¨¹ıindex
+	public void selectByIndex(String locator, int index) {//ä¸‹æ‹‰æ¡†é€šè¿‡index
 		getSelect(locator).selectByIndex(index);
 	}
 
 	
 
-	public String getHtmlSource() {//µ±Ç°Ò³ÃæµÄÔ´´úÂëÊÇ
+	public String getHtmlSource() {//å½“å‰é¡µé¢çš„æºä»£ç æ˜¯
 
 		return driver.getPageSource();
 	}
 
-	public void runJs(String js) {//ÏÂ»¬
+	public void runJs(String js) {//ä¸‹æ»‘
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
 	}
 
 
-	public void mouseToElement(String locator) throws InterruptedException {//Êó±ê»¬¶¯
+	public void mouseToElement(String locator) throws InterruptedException {//é¼ æ ‡æ»‘åŠ¨
 		action.moveToElement(finder.findElement(locator)).perform();
 	}
 
-	public void mouseToElementandClick(String locator) throws InterruptedException {//Êó±ê»¬¶¯µã»÷
+	public void mouseToElementandClick(String locator) throws InterruptedException {//é¼ æ ‡æ»‘åŠ¨ç‚¹å‡»
 		action.moveToElement(finder.findElement(locator)).click().perform();
 	}
 	
-	public void switchWidow(int i){//ÍøÒ³¾ä±ú
+	public void switchWidow(int i){//ç½‘é¡µå¥æŸ„
 	    List<String> windows = new ArrayList<String>();
 	    for (String handle : driver.getWindowHandles()) {
 	    
@@ -276,23 +276,23 @@ public class WebDriverEngine {
 	    }
 	    driver.switchTo().window(windows.get(i));
 	}
-	//ÓÒ¼ü
+	//å³é”®
 	public void rightClickMouse(String locator) throws InterruptedException {
 		action.contextClick(finder.findElement(locator)).perform();
 		}
-	//Tab¼ü
+	//Tabé”®
 	public void tapClick(){
 	
 		action.sendKeys(Keys.TAB).perform();
 	}
 	
-	//DOWN¼ü
+	//DOWNé”®
 	public void downClick(){
 		action.sendKeys(Keys.DOWN).perform();
 	}
 	
 	
-	public void tapType(String content){//Í¨¹ıcontentÒÆ¶¯¸»ÎÄ±¾
+	public void tapType(String content){//é€šè¿‡contentç§»åŠ¨å¯Œæ–‡æœ¬
 		
 			action.sendKeys(content).perform();
 		}

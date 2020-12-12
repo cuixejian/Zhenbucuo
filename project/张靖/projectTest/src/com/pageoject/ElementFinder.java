@@ -9,7 +9,7 @@ import www.util.Log;
 
 /**
  * author:zhangjing
- * ²éÕÒÔªËØÀà
+ * æŸ¥æ‰¾å…ƒç´ ç±»
  */
 public class ElementFinder {
 	

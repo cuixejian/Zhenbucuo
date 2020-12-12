@@ -11,9 +11,13 @@ import org.testng.annotations.BeforeClass;
 import com.pageoject.WebDriverEngine;
 import www.util.Log;
 import www.util.ReadProperties;
+/**
+ * author:zhangjing
+ 
+ */
 
 
-//初始化浏览器
+//鍒濆鍖栨祻瑙堝櫒
 public class BaseTest{
 	public  WebDriverEngine webtest;
 	private WebDriver driver;
@@ -68,34 +72,5 @@ public class BaseTest{
     }
 
 
-//	public BaseTest() {
-//		System.out.println("BaseTest构造方法");
-//	}
-//	public  WebDriverEngine webtest;
-//	protected WebDriver driver;
-//	@BeforeClass
-//	public void initBrower() {
-//		try {
-//			// 默认支持火狐浏览器，能够正常打开，若不能打开火狐，则把下面的火狐的驱动放开
-//			System.setProperty("webdriver.gecko.driver", "D:\\Firefox\\geckodriver.exe");
-//			System.setProperty("webdriver.firebox.bin", "D:\\Firefox\\geckodriver.exe");
-//			driver = new FirefoxDriver();
-//			System.out.println("成功打开火狐浏览器！");
-//		} catch (Exception e) {
-//			// TODO: handle exception
-//			System.out.println("打开火狐浏览器时出错了"+e);
-//		}
-//	}
-//	
-//	@AfterClass
-//	public void quitBrowser() {
-//		System.out.println("quitBrowser()");
-//		try {
-//			Thread.sleep(2000);
-//			driver.quit();
-//			System.out.println("成功关闭浏览器！");
-//			} catch (Exception e) {
-//				System.out.println("关闭浏览器时出错了"+e);
-//				}
-//	}
+
 }
