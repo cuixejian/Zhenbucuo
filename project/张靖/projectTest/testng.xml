@@ -1,13 +1,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="s1" verbose="1" parallel="none">
-	<listeners>
+<!--  <listeners>
 			<listener class-name="org.uncommons.reportng.HTMLReporter" />
 			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
 			<listener class-name="com.pageojiect.WebTestListener"></listener>
 	</listeners>
+	
+	-->	
 	<test name="t2" preserve-order="true">
 		<classes>
+			<class name="www.test.FrontLogin" />
+			<class name="www.test.BackLogin" />
 			<class name="www.test.ExcelTest" />
 		</classes>
 	</test>

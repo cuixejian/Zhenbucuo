@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name= "wushuaiTest" basedir= "." default="transform">
-	<property name= "libs.dir" value= "libs" />
-	<path id= "test.classpath" >
-	<!-- adding the saxon jar to your classpath -->
-	<fileset dir= "${libs.dir}" includes= "*.jar" />
+<project name ="projectTest" default="run" basedir=".">
+	
+	 <!-- 定义全局变量 -->
+	<property name="dest" value="build/classes" />
+	<property name="testng.dir" value="./test-output"/>
+	<property name="src" value="src"/>
+	<property name= "libs.dir" value= "libs"/>
+	
+	<!-- 定义类路径 -->
+	<path id="classes">
+	    <fileset dir="libs" includes="*.jar"/>
+		<pathelement location="${dest}"/>
 	</path>
-	<target name= "transform" >
-	<xslt in= "F:/woow/ant/test/projectTest/test-output/testng-results.xml" style= "F:/woow/ant/test/projectTest/test-output/testng-results.xsl"
-	out= "F:/woow/ant/test/projectTest/reports/index.html" >
-	<!-- you need to specify the directory here again -->
-	<param name= "testNgXslt.outputDir" expression= "F:/woow/ant/test/projectTest/reports" />
-	<classpath refid= "test.classpath" />
-	</xslt>
-	</target>
+	
+	<taskdef resource="testngtasks" classpath="F:/woow/ant/test/projectTest/libs/org.testng_7.jar"/>  
+	
+    <target name="clean">
+        <delete dir="${dest}"/>
+    </target>
+    <!-- 编译 src目录 -->
+    <target name="compile"  depends ="clean">
+        <mkdir dir ="${dest}"/>
+    	<javac srcdir="${src}" destdir="${dest}"  classpathref="classes" includeantruntime="on" encoding="UTF-8"/>
+   	</target>
+    <!-- 运行 -->
+    <target name="run"  depends ="compile" >
+     	<testng outputdir="${testng.dir}" classpathref="classes" >
+		<xmlfileset dir="." includes="testng.xml"/>
+ 	  	</testng>
+    	<xslt in= "F:/woow/ant/test/projectTest/test-output/testng-results.xml" style= "F:/woow/ant/test/projectTest/test-output/testng-results.xsl"
+    			out= "F:/woow/ant/test/projectTest/reports/index.html" >
+    			<!-- you need to specify the directory here again -->
+    			<param name= "testNgXslt.outputDir" expression= "F:/woow/ant/test/projectTest/reports" />
+    			<classpath refid= "classes"/>
+    		</xslt>
+    </target>
 </project>
