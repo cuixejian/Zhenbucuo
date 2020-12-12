@@ -5,6 +5,7 @@ import org.testng.ITestContext;
 import org.testng.TestRunner;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.pageoject.BaseTest;
@@ -16,18 +17,19 @@ import www.util.JavaMailTest;
  
  */
 
+@Listeners(JavaMailTest.class)
 public class ExcelTest extends BaseTest {
-	//Êı¾İÇı¶¯
+	//æ•°æ®é©±åŠ¨
 	@DataProvider(name = "back_login")
 	public Object[][] data() throws IOException{
 		ExcelDataFile excel=new ExcelDataFile();
-		return excel.getTestData("F:\\woow\\ant\\test\\projectTest\\ExcelTest\\ExcelTest1.xlsx", "SheetTest1");
-//		return excel.getTestData("C:\\zhenbucuo\\project\\ÕÅ¾¸\\projectTest\\ExcelTest\\ExcelTest1.xlsx", "SheetTest1");
+		return excel.getTestData("ExcelTest\\ExcelTest1.xlsx", "Sheet1");
+//		return excel.getTestData("C:\\zhenbucuo\\project\\å¼ é–\\projectTest\\ExcelTest\\ExcelTest1.xlsx", "Sheet1");
 	}
 	
 	@BeforeSuite
 	public void addListener(ITestContext context) {
-		System.out.println("Ìí¼Ó¼àÌıÆ÷");
+		System.out.println("æ·»åŠ ç›‘å¬å™¨");
 		TestRunner runner = (TestRunner)context;
 		runner.addListener(new JavaMailTest());
 	}
@@ -35,19 +37,18 @@ public class ExcelTest extends BaseTest {
 	@Test(dataProvider="back_login")
 	public void backLogin(String username,String password) throws InterruptedException {
 		System.out.println(username+""+password);
-		webtest.open("http://localhost:83/index.php/Admin/Admin/login#");
-		webtest.type("name=username","usename");
-		webtest.type("name=password","password");
+		webtest.open("http://localhost:83/index.php/Admin/Admin/login");
+		webtest.type("name=username",username);
+		webtest.type("name=password",password);
 		webtest.type("name=vertify", "aaaa");
-		webtest.click("xpath=//input[@value='µÇÂ¼']");
+		webtest.click("xpath=//input[@value='ç™»å½•']");
 		
 		Thread.sleep(1000);
-		webtest.click("link=Ò³Ãæ");
+		webtest.click("link=é¡µé¢");
 		Thread.sleep(1000);
 		webtest.downClick();
 		Thread.sleep(1000);
-		webtest.click("link=¹ã¸æÁĞ±í");
-		
+		webtest.click("link=å¹¿å‘Šåˆ—è¡¨");
 		
 	}
 }

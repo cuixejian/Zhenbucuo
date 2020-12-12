@@ -4,16 +4,16 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Log {
-	// ³õÊ¼»¯Log4jÈÕÖ¾
+	// åˆå§‹åŒ–Log4jæ—¥å¿—
 	static Logger logger = LogManager.getLogger(Log.class.getName());
-	// ´òÓ¡²âÊÔÓÃÀı¿ªÍ·µÄÈÕÖ¾
+	// æ‰“å°æµ‹è¯•ç”¨ä¾‹å¼€å¤´çš„æ—¥å¿—
 	public static void startTestCase(String sTestCaseName) {
-		logger.info("------------------ " + sTestCaseName + "  " +"¿ªÊ¼Ö´ĞĞ ------------------");
+		logger.info("------------------ " + sTestCaseName + "  " +"å¼€å§‹æ‰§è¡Œ ------------------");
 	}
 	
-	//´òÓ¡²âÊÔÓÃÀı½áÊøµÄÈÕÖ¾
+	//æ‰“å°æµ‹è¯•ç”¨ä¾‹ç»“æŸçš„æ—¥å¿—
 	public static void endTestCase(String sTestCaseName) {
-		logger.info("------------------ " + sTestCaseName + "  " +"²âÊÔÖ´ĞĞ½áÊø ---------------");
+		logger.info("------------------ " + sTestCaseName + "  " +"æµ‹è¯•æ‰§è¡Œç»“æŸ ---------------");
 
 	}
 

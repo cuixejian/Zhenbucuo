@@ -14,41 +14,41 @@ import com.pageoject.BaseTest;
 public class FrontLogin extends BaseTest{
 	
 	public void FrontLogin() {
-		System.out.println("FrontLoginµÄ¹¹Ôì·½·¨");	
+		System.out.println("FrontLoginçš„æ„é€ æ–¹æ³•");	
 		webtest.open("http://localhost:83/");
-		webtest.click("link=µÇÂ¼");
+		webtest.click("link=ç™»å½•");
 		webtest.type("name=username","13800138006");
 		webtest.type("name=password","123456");
 		webtest.type("name=verify_code", "aaaa");
 		webtest.click("name=sbtbutton");
 	}
 	
-	//Ìø×ª¼Ò¾Ó³Ç
+	//è·³è½¬å®¶å±…åŸ
 	public void FindElement() {
 		webtest.open("http://localhost:83/");
 		webtest.open("http://localhost:83/index.php/Home/Goods/goodsList/id/30");
 	}
 	
-	//Ìø×ªÍ¼Êé¹İ
+	//è·³è½¬å›¾ä¹¦é¦†
 	public void FindElement2() {
 		webtest.open("http://localhost:83/");
 		webtest.open("http://localhost:83/index.php/Home/Goods/goodsList/id/83");
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°³ø¾ß¡±Ìø×ª£¬µã»÷¡°Ë®¾ß¾Æ¾ß¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œå¨å…·â€è·³è½¬ï¼Œç‚¹å‡»â€œæ°´å…·é…’å…·â€
 	@Test(priority=1)
 	public void furnitureChoice1() throws InterruptedException {
 		FrontLogin();
 		Thread.sleep(1000);
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=³ø¾ß");
-		webtest.click("link=Ë®¾ß¾Æ¾ß");
+		webtest.click("link=å¨å…·");
+		webtest.click("link=æ°´å…·é…’å…·");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isElementPresent("xpath=//div[@class='havedox']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬ÑÕÉ«·ÖÀàµã»÷¡°¶àÑ¡¡±£¬µã»÷¡°30cm 40cm 50cm¡±£¬µã»÷È·¶¨
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œé¢œè‰²åˆ†ç±»ç‚¹å‡»â€œå¤šé€‰â€ï¼Œç‚¹å‡»â€œ30cm 40cm 50cmâ€ï¼Œç‚¹å‡»ç¡®å®š
 	@Test(priority=2)
 	public void furnitureChoice2() throws InterruptedException {
 		FindElement();
@@ -62,7 +62,7 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isElementPresent("xpath=//a[@class='u-av-label']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬ÑÕÉ«·ÖÀàµã»÷¡°¶àÑ¡¡±£¬µã»÷È·¶¨
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œé¢œè‰²åˆ†ç±»ç‚¹å‡»â€œå¤šé€‰â€ï¼Œç‚¹å‡»ç¡®å®š
 	@Test(priority=3)
 	public void furnitureChoice3() throws InterruptedException {
 		FindElement();
@@ -73,7 +73,7 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isElementPresent("class=dx_choice"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬ÑÕÉ«·ÖÀàµã»÷¡°¶àÑ¡¡±£¬µã»÷¡°30cm 40cm 50cm¡±£¬µã»÷È¡Ïû
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œé¢œè‰²åˆ†ç±»ç‚¹å‡»â€œå¤šé€‰â€ï¼Œç‚¹å‡»â€œ30cm 40cm 50cmâ€ï¼Œç‚¹å‡»å–æ¶ˆ
 	@Test(priority=4)
 	public void furnitureChoice4() throws InterruptedException {
 		FindElement();
@@ -86,7 +86,7 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isElementPresent("class=dx_choice"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬ÑÕÉ«·ÖÀàµã»÷¡°ºÚÉ«¿òĞ¡ºÅ¡±Ìø×ª£¬·ç¸ñµã»÷¡°ÌïÔ°¡±£¬°Ú¼şÀàĞÍµã»÷¡°ÊÖ¹¤Ö¯Ôì¡±£¬ÊÊÓÃ¿Õ¼ä¡°¿ÍÌü¡±£¬µã»÷Çå¿ÕÉ¸Ñ¡Ìõ¼ş
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œé¢œè‰²åˆ†ç±»ç‚¹å‡»â€œé»‘è‰²æ¡†å°å·â€è·³è½¬ï¼Œé£æ ¼ç‚¹å‡»â€œç”°å›­â€ï¼Œæ‘†ä»¶ç±»å‹ç‚¹å‡»â€œæ‰‹å·¥ç»‡é€ â€ï¼Œé€‚ç”¨ç©ºé—´â€œå®¢å…â€ï¼Œç‚¹å‡»æ¸…ç©ºç­›é€‰æ¡ä»¶
 	@Test(priority=5)
 	public void furnitureChoice5() throws InterruptedException {
 		FindElement();
@@ -94,39 +94,39 @@ public class FrontLogin extends BaseTest{
 		webtest.click("xpath=//a[@href='/index.php/home/Goods/goodsList/id/30/spec/27_106']");
 		webtest.click("xpath=//a[@href='/index.php/home/Goods/goodsList/id/30/spec/27_106/attr/21_%E7%94%B0%E5%9B%AD']");
 		webtest.click("xpath=//a[@href='/index.php/home/Goods/goodsList/id/30/spec/27_106/attr/21_%E7%94%B0%E5%9B%AD%4019_%E6%89%8B%E5%B7%A5%E7%BB%87%E9%80%A0']");
-		webtest.click("link=Çå¿ÕÉ¸Ñ¡Ìõ¼ş");
+		webtest.click("link=æ¸…ç©ºç­›é€‰æ¡ä»¶");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isDisplayed("class=dx_choice"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°³ø¾ß¡±Ìø×ª£¬»¬µ½¡°³ø¾ß¡±£¬µã»÷¡°¼Ò·Ä¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œå¨å…·â€è·³è½¬ï¼Œæ»‘åˆ°â€œå¨å…·â€ï¼Œç‚¹å‡»â€œå®¶çººâ€
 	@Test(priority=6)
 	public void furnitureChoice6() throws InterruptedException{
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=³ø¾ß");
-		webtest.mouseToElement("link=Çå¿ÕÉ¸Ñ¡Ìõ¼ş");
+		webtest.click("link=å¨å…·");
+		webtest.mouseToElement("link=æ¸…ç©ºç­›é€‰æ¡ä»¶");
 		Thread.sleep(1000);
 		webtest.mouseToElement("class=disenk");
 		Thread.sleep(1000);
-		webtest.click("link=¼Ò·Ä");
+		webtest.click("link=å®¶çºº");
 		Thread.sleep(1000);
-		Assert.assertTrue(webtest.isDisplayed("link=Á¹Ï¯"));
+		Assert.assertTrue(webtest.isDisplayed("link=å‡‰å¸­"));
 	} 
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°³ø¾ß¡±Ìø×ª£¬µã»÷¡°È«²¿½á¹û¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œå¨å…·â€è·³è½¬ï¼Œç‚¹å‡»â€œå…¨éƒ¨ç»“æœâ€
 	@Test(priority=7)
 	public void furnitureChoice7() throws InterruptedException{
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=³ø¾ß");
-		webtest.click("link=È«²¿½á¹û");
+		webtest.click("link=å¨å…·");
+		webtest.click("link=å…¨éƒ¨ç»“æœ");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isElementPresent("xpath=//a[@href='/index.php/Home/Goods/goodsList/id/262.html']"));
 		
 	} 
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬ÑÕÉ«·ÖÀàµã»÷¡°ºÚÉ«¿òĞ¡ºÅ¡±Ìø×ª£¬µã»÷³ıÈ¥¡°ÑÕÉ«·ÖÀà£ººÚÉ«¿òĞ¡ºÅ¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œé¢œè‰²åˆ†ç±»ç‚¹å‡»â€œé»‘è‰²æ¡†å°å·â€è·³è½¬ï¼Œç‚¹å‡»é™¤å»â€œé¢œè‰²åˆ†ç±»ï¼šé»‘è‰²æ¡†å°å·â€
 	@Test(priority=8)
 	public void furnitureChoice8() throws InterruptedException {
 		FindElement();
@@ -138,63 +138,63 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isDisplayed("link=30cm"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°¸ü¶àÑ¡Ïî¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œæ›´å¤šé€‰é¡¹â€
 	@Test(priority=9)
 	public void furnitureButton9() throws InterruptedException {
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=¸ü¶àÑ¡Ïî");
+		webtest.click("link=æ›´å¤šé€‰é¡¹");
 		webtest.runJs("window.scrollTo(0,500)");
 		Thread.sleep(2000);
-		webtest.click("link=ÊÕÆğ");
+		webtest.click("link=æ”¶èµ·");
 		Thread.sleep(1000);
 		webtest.runJs("window.scrollTo(500,0)");
-		Assert.assertTrue(webtest.isElementPresent("link=¸ü¶àÑ¡Ïî"));
+		Assert.assertTrue(webtest.isElementPresent("link=æ›´å¤šé€‰é¡¹"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°ÏúÁ¿¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œé”€é‡â€
 	@Test(priority=10)
 	public void furnitureButton10() throws InterruptedException {
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=ÏúÁ¿");
+		webtest.click("link=é”€é‡");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isDisplayed("xpath=//li[@class='red']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°¼Û¸ñ¡±£¬ÔÙ´Îµã»÷¡°¼Û¸ñ¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œä»·æ ¼â€ï¼Œå†æ¬¡ç‚¹å‡»â€œä»·æ ¼â€
 	@Test(priority=11)
 	public void furnitureButton11() throws InterruptedException {
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=¼Û¸ñ");
+		webtest.click("link=ä»·æ ¼");
 		Thread.sleep(2000);
-		webtest.click("link=¼Û¸ñ");
+		webtest.click("link=ä»·æ ¼");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isDisplayed("xpath=//li[@class='red']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°ÆÀÂÛ¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œè¯„è®ºâ€
 	@Test(priority=12)
 	public void furnitureButton12() throws InterruptedException {
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=ÆÀÂÛ");
+		webtest.click("link=è¯„è®º");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isDisplayed("xpath=//li[@class='red']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°ĞÂÆ·¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œæ–°å“â€
 	@Test(priority=13)
 	public void furnitureButton13() throws InterruptedException {
 		FindElement();
 		Thread.sleep(1000);
-		webtest.click("link=ĞÂÆ·");
+		webtest.click("link=æ–°å“");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isDisplayed("xpath=//li[@class='red']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷¡°É¸Ñ¡ºóÍË¡±£¬µã»÷¡°É¸Ñ¡Ç°½ø¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»â€œç­›é€‰åé€€â€ï¼Œç‚¹å‡»â€œç­›é€‰å‰è¿›â€
 	@Test(priority=14)
 	public void furnitureButton14() throws InterruptedException {
 		FindElement();
@@ -206,7 +206,7 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isElementPresent("class=z-cur"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬»¬µ½Í¼Æ¬ÏÂÃæ£¬Ìí¼ÓÊıÁ¿£¬¼ÓÈë¹ºÎï³µ
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œæ»‘åˆ°å›¾ç‰‡ä¸‹é¢ï¼Œæ·»åŠ æ•°é‡ï¼ŒåŠ å…¥è´­ç‰©è½¦
 	@Test(priority=15)
 	public void furnitureButton15() throws InterruptedException {
 		FindElement();
@@ -218,7 +218,7 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isElementPresent("class=z-cur"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬»¬µ½Í¼Æ¬ÏÂÃæ£¬µã»÷Á´½Ó£¬Á¢¼´¹ºÂò
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œæ»‘åˆ°å›¾ç‰‡ä¸‹é¢ï¼Œç‚¹å‡»é“¾æ¥ï¼Œç«‹å³è´­ä¹°
 	@Test(priority=16)
 	public void furnitureButton16() throws InterruptedException {
 		FindElement();
@@ -227,14 +227,14 @@ public class FrontLogin extends BaseTest{
 		webtest.click("class=lazy-list");
 		webtest.switchWidow(1);
 		Thread.sleep(3000);
-		webtest.click("link=Á¢¼´¹ºÂò");
+		webtest.click("link=ç«‹å³è´­ä¹°");
 		Thread.sleep(4000);
 		webtest.switchWidow(0);
 		Thread.sleep(1000);
-		Assert.assertTrue(webtest.isDisplayed("link=¼Ò¾Ó³Ç"));
+		Assert.assertTrue(webtest.isDisplayed("link=å®¶å±…åŸ"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬»¬¶¯µ½ÏÂÃæ£¬µã»÷¡°ÏÂÒ»Ò³¡±£¬µã»÷¡°ÉÏÒ»Ò³¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œæ»‘åŠ¨åˆ°ä¸‹é¢ï¼Œç‚¹å‡»â€œä¸‹ä¸€é¡µâ€ï¼Œç‚¹å‡»â€œä¸Šä¸€é¡µâ€
 	@Test(priority=17)
 	public void furnitureButton17() throws InterruptedException {
 		FindElement();
@@ -247,10 +247,10 @@ public class FrontLogin extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("class=prev");
 		Thread.sleep(1000);
-		Assert.assertTrue(webtest.isDisplayed("link=¼Ò¾Ó³Ç"));
+		Assert.assertTrue(webtest.isDisplayed("link=å®¶å±…åŸ"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬»¬¶¯µ½ÏÂÃæ£¬µã»÷¡°1¡±£¬µã»÷¡°2¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œæ»‘åŠ¨åˆ°ä¸‹é¢ï¼Œç‚¹å‡»â€œ1â€ï¼Œç‚¹å‡»â€œ2â€
 	@Test(priority=18)
 	public void furnitureButton18() throws InterruptedException {
 		FindElement();
@@ -263,10 +263,10 @@ public class FrontLogin extends BaseTest{
 		Thread.sleep(1000);
 		webtest.click("class=paginate_button");
 		Thread.sleep(1000);
-		Assert.assertTrue(webtest.isDisplayed("link=¼Ò¾Ó³Ç"));
+		Assert.assertTrue(webtest.isDisplayed("link=å®¶å±…åŸ"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬»¬¶¯µ½ÏÂÃæ£¬µã»÷¡°»»Ò»»»¡±
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œæ»‘åŠ¨åˆ°ä¸‹é¢ï¼Œç‚¹å‡»â€œæ¢ä¸€æ¢â€
 	@Test(priority=19)
 	public void furnitureButton19() throws InterruptedException {
 		FindElement();
@@ -278,7 +278,7 @@ public class FrontLogin extends BaseTest{
 		Assert.assertTrue(webtest.isDisplayed("class=pad"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨£¬µã»÷¼Ò¾Ó³Ç£¬µã»÷ÍÆ¼öÈÈÂô£¬Í¼Æ¬³¬Á´½Ó
+	//æ‰“å¼€å•†åŸå‰å°ï¼Œç‚¹å‡»å®¶å±…åŸï¼Œç‚¹å‡»æ¨èçƒ­å–ï¼Œå›¾ç‰‡è¶…é“¾æ¥
 	@Test(priority=20)
 	public void furnitureButton20() throws InterruptedException {
 		FindElement();
@@ -288,55 +288,55 @@ public class FrontLogin extends BaseTest{
 		webtest.click("class=lazy");
 		Thread.sleep(3000);
 		webtest.switchWidow(0);
-		Assert.assertTrue(webtest.isDisplayed("link=¼Ò¾Ó³Ç"));
+		Assert.assertTrue(webtest.isDisplayed("link=å®¶å±…åŸ"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨Í¼Êé¹İ£¬Ñ¡ÔñÂ·¾¶×î³¤Ò»Ïî½øĞĞ²âÊÔ
+	//æ‰“å¼€å•†åŸå‰å°å›¾ä¹¦é¦†ï¼Œé€‰æ‹©è·¯å¾„æœ€é•¿ä¸€é¡¹è¿›è¡Œæµ‹è¯•
 	@Test(priority=45)
 	public void   Library45() throws InterruptedException{
 		FindElement2();
 		Thread.sleep(1000);
-		webtest.click("link=¸£¶ûÄ¦Ë¹Ì½°¸È«¼¯");
-		webtest.click("link=¸£¶ûÄ¦Ë¹Ì½°¸È«¼¯");
+		webtest.click("link=ç¦å°”æ‘©æ–¯æ¢æ¡ˆå…¨é›†");
+		webtest.click("link=ç¦å°”æ‘©æ–¯æ¢æ¡ˆå…¨é›†");
 		webtest.click("link=9787510858673");
-		webtest.click("link=ÊÇ");
-		webtest.click("link=¾ÅÖİ³ö°æÉç");
-		webtest.click("link=[Ó¢]¿ÂÄÏ¡¤µÀ¶û");
-		webtest.click("link=136-170Ôª");
+		webtest.click("link=æ˜¯");
+		webtest.click("link=ä¹å·å‡ºç‰ˆç¤¾");
+		webtest.click("link=[è‹±]æŸ¯å—Â·é“å°”");
+		webtest.click("link=136-170å…ƒ");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isElementPresent("xpath=//a[@href='/index.php/Home/Goods/goodsInfo/id/317.html']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨Í¼Êé¹İ£¬¸ü¶àÑ¡ÏîÑ¡Ôñ¼Û¸ñÉ¸Ñ¡
+	//æ‰“å¼€å•†åŸå‰å°å›¾ä¹¦é¦†ï¼Œæ›´å¤šé€‰é¡¹é€‰æ‹©ä»·æ ¼ç­›é€‰
 	@Test(priority=46)
 	public void Library46() throws InterruptedException {
 		FindElement2();
 		Thread.sleep(1000);
 		webtest.click("class=dx_choice");
-		webtest.click("link=³©Ïú°æ");
-		webtest.click("link=¾«×°");
+		webtest.click("link=ç•…é”€ç‰ˆ");
+		webtest.click("link=ç²¾è£…");
 		webtest.click("class=u-confirm");
-		webtest.click("link=24-36Ôª");
+		webtest.click("link=24-36å…ƒ");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isElementPresent("xpath=//a[@href='/index.php/Home/Goods/goodsInfo/id/68.html']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨Í¼Êé¹İ£¬¸ü¶àÑ¡ÏîÌîÑ¡¼Û¸ñÉ¸Ñ¡
+	//æ‰“å¼€å•†åŸå‰å°å›¾ä¹¦é¦†ï¼Œæ›´å¤šé€‰é¡¹å¡«é€‰ä»·æ ¼ç­›é€‰
 	@Test(priority=47)
 	public void Library47() throws InterruptedException {
 		FindElement2();
 		Thread.sleep(1000);
-		webtest.click("link=¸ü¶àÑ¡Ïî");
+		webtest.click("link=æ›´å¤šé€‰é¡¹");
 		webtest.runJs("window.scrollTo(0,1000)");
 		Thread.sleep(2000);
 		webtest.type("xpath=//input[@id='start_price']", "50");
 		webtest.type("xpath=//input[@id='end_price']", "200");
-		webtest.click("xpath=//input[@value='È·¶¨']");
+		webtest.click("xpath=//input[@value='ç¡®å®š']");
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isElementPresent("xpath=//a[@href='/index.php/Home/Goods/goodsInfo/id/67.html']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨Í¼Êé¹İ£¬Ìí¼ÓÊıÁ¿Îª10µÄÁ½¸öÉÌÆ·Ìí¼Ó¹ºÎï³µ
+	//æ‰“å¼€å•†åŸå‰å°å›¾ä¹¦é¦†ï¼Œæ·»åŠ æ•°é‡ä¸º10çš„ä¸¤ä¸ªå•†å“æ·»åŠ è´­ç‰©è½¦
 	@Test(priority=48)
 	public void Library48() throws InterruptedException {
 		FindElement2();
@@ -344,9 +344,9 @@ public class FrontLogin extends BaseTest{
 		webtest.runJs("window.scrollTo(0,400)");
 		webtest.typeAndClear("xpath=//input[@id='number_12']", "10");
 		Thread.sleep(1000);
-		webtest.click("link=¼ÓÈë¹ºÎï³µ");
+		webtest.click("link=åŠ å…¥è´­ç‰©è½¦");
 		webtest.enterFrame("layui-layer-iframe1");
-		webtest.click("link=¼ÌĞø¹ºÎï");
+		webtest.click("link=ç»§ç»­è´­ç‰©");
 		webtest.leaveFrame();
 		Thread.sleep(2000);
 		webtest.typeAndClear("xpath=//input[@id='number_22']", "10");
@@ -354,26 +354,26 @@ public class FrontLogin extends BaseTest{
 		webtest.click("xpath=//div[@class='w1430']/div[2]/div[2]/ul/li[2]/div/div[5]/div[2]/a");
 		Thread.sleep(1000);
 		webtest.enterFrame("layui-layer-iframe2");
-		webtest.click("link=È¥¹ºÎï³µ½áËã");
+		webtest.click("link=å»è´­ç‰©è½¦ç»“ç®—");
 		webtest.leaveFrame();
 		Thread.sleep(1000);
 		Assert.assertTrue(webtest.isDisplayed("xpath=//em[@id='goods_num']"));
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨Í¼Êé¹İ£¬ÍøÒ³µ×²¿ÎÄ×ÖÓÑÇéÁ´½Ó
+	//æ‰“å¼€å•†åŸå‰å°å›¾ä¹¦é¦†ï¼Œç½‘é¡µåº•éƒ¨æ–‡å­—å‹æƒ…é“¾æ¥
 	@Test(priority=49)
 	public void Library49() throws InterruptedException {
 		String TBurl = "https://www.taobao.com/";
 		FindElement2();
 		Thread.sleep(1000);
 		webtest.runJs("window.scrollTo(0,2500)");
-		webtest.click("link=ÌÔ±¦Íø");
+		webtest.click("link=æ·˜å®ç½‘");
 		Thread.sleep(2000);
 		Assert.assertEquals(TBurl, webtest.getUrl());
 		Thread.sleep(2000);
 	}
 	
-	//´ò¿ªÉÌ³ÇÇ°Ì¨Í¼Êé¹İ£¬ÉÌÆ·ÏÂÁĞĞ¡Í¼µÄ»¬¶¯
+	//æ‰“å¼€å•†åŸå‰å°å›¾ä¹¦é¦†ï¼Œå•†å“ä¸‹åˆ—å°å›¾çš„æ»‘åŠ¨
 	@Test(priority=50)
 	public void Library50() throws InterruptedException {
 		String TBurl = "https://www.taobao.com/";

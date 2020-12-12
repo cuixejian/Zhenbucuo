@@ -1,42 +1,60 @@
 package www.util;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+
 import org.testng.ITestContext;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
+import www.dataprovider.MailUtil;
+
 public class JavaMailTest extends TestListenerAdapter{
-	static String aString ;
 	@Override
 	public void onFinish(ITestContext testContext) {
-		// TODO Auto-generated method stub
 //		super.onFinish(testContext);
-//		´òÓ¡³ö×ÜµÄ²âÊÔÓÃÀıÊıÄ¿
-		ITestNGMethod[] methods = this.getAllTestMethods();
-		System.out.println("Ò»¹²Ö´ĞĞÁË£º"+methods.length);
 		
-//		³É¹¦µÄ/Ê§°ÜµÄ²âÊÔÓÃÀıÃû³ÆºÍÊıÄ¿
-		List<ITestResult> passList=this.getPassedTests();
-		int len=passList.size();
-		System.out.println("³É¹¦µÄ²âÊÔÓÃÀı£º"+len);
-		for(int i=0;i<len;i++) {
-			ITestResult tr=passList.get(i);
-			System.out.println(tr.getInstanceName()+":"+tr.getName()+"³É¹¦ÁË");
-		}
-
+		//æ‰“å°å‡ºæµ‹è¯•ç”¨ä¾‹åç§°å’Œæ•°ç›®
+		ITestNGMethod[] methods = this.getAllTestMethods();
+		System.out.println("ä¸€å…±æ‰§è¡Œäº†ï¼š"+methods.length);
+		
+		//æˆåŠŸ/å¤±è´¥
+		String string= new String();
 		List<ITestResult> failList=this.getFailedTests();
-		len=failList.size();
-		System.out.println("Ê§°ÜµÄ²âÊÔÓÃÀı£º"+len);
-		for(int i=0;i<len;i++) {
-			ITestResult tr=failList.get(i);
-			System.out.println(tr.getInstanceName()+":"+tr.getName()+"Ê§°ÜÁË");	
-			if(aString ==null)
-				aString=tr.getInstanceName()+":"+tr.getName()+" ";
-			else
-				aString+=tr.getInstanceName()+":"+tr.getName()+" ";
-
+		System.out.println("å¤±è´¥çš„æµ‹è¯•ç”¨ä¾‹"+failList.size());
+		for (int i = 0; i < failList.size(); i++) {
+			ITestResult tResult=failList.get(i);
+			string+=tResult.getInstanceName()+":"+tResult.getName()+"å¤±è´¥äº†"+"\r\n";
+			System.out.println(tResult.getInstanceName()+":"+tResult.getName()+"å¤±è´¥äº†");	
 		}
-
+		
+		List<ITestResult> passList=this.getPassedTests();
+		System.out.println("æˆåŠŸçš„æµ‹è¯•ç”¨ä¾‹"+passList.size());
+		for (int i = 0; i < passList.size(); i++) {
+			ITestResult testResult=passList.get(i);
+			System.out.println(testResult.getInstanceName()+":"+testResult.getName()+"æˆåŠŸäº†");
+			
+		}
+		
+		try {
+			MailUtil.send(string);
+		} catch (FileNotFoundException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}catch (IOException e) {
+			// TODO: handle exception
+		}catch (AddressException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} catch (MessagingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 }
